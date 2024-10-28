@@ -155,7 +155,7 @@ p {
 	height: 150px;
 	background-color: rgba(255, 255, 255, 0.5);
 	perspective-origin: center center;
-	perspective: 200px;
+	perspective: 100px;
 }
 
 .content__3D .content__wrapper3d div {
@@ -197,7 +197,7 @@ p {
 }
 
 .content__scale3D:hover {
-	transform: scale3d(1.3, 1.3, 2);
+	transform: scale3d(1.5, 1.5, 1);
 }
 
 /* rotate3D  */
@@ -216,12 +216,12 @@ p {
 /* Multi3D */
 .content__multi3d {
 	background-color: orangered;
-	/* transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 10deg);	 */
+	transform: translate3d(0px, 0px, 0px) rotate3d(1, 1, 1, 0deg);	
 }
 
 .content__multi3d:hover {
 	background-color: orangered;
-	transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 10deg);
+	transform: translate3d(50px, 50px, 20px) rotate3d(1, 1, 1, 40deg);
 }
 
 /* transform-style */
@@ -230,7 +230,7 @@ p {
 	width: 150px;
 	height: 150px;
 	background-color: rgba(255, 255, 255, 0.549);
-	perspective: 400px;
+	perspective: 200px;
 	/* transform-style: flat; */
 	transform-style: preserve-3d;
 }
@@ -274,18 +274,18 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	backface-visibility: hidden;
+	/* backface-visibility: hidden; */
 }
 
 
 .flip__front {
 	transform: rotateY(0deg);
-	background-color: rgb(119, 96, 141);
+	background-color: rgba(129, 1, 248, 0.519);
 }
 
 .flip__back {
 	transform: rotateY(-180deg);
-	background-color: rgba(121, 79, 69);
+	background-color: rgba(137, 229, 7, 0.501);
 }
 
 .flip:hover .flip__body {
